@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
@@ -401,9 +402,11 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Profile</th>
-                          <th>VatNo.</th>
-                          <th>Created</th>
+                          <th>Name</th>
+                          <th>Id</th>
+                          <th>Package</th>
+                          <th>Price</th>
+                          <th>Data</th>
                           <th>Status</th>
                         </tr>
                       </thead>
@@ -411,32 +414,52 @@
                         <tr>
                           <td>Jacob</td>
                           <td>53275531</td>
+                          <td>XL size</td>
+                          <td>500$</td>
                           <td>12 May 2017</td>
                           <td><label class="badge badge-danger">Pending</label></td>
+                          <td><button type="button" class="btn btn-warning modal-activator">Edit</button></td>
+                          <td><button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
                         <tr>
                           <td>Messsy</td>
                           <td>53275532</td>
+                          <td>XL size</td>
+                          <td>500$</td>
                           <td>15 May 2017</td>
                           <td><label class="badge badge-warning">In progress</label></td>
+                          <td><button type="button" class="btn btn-warning modal-activator">Edit</button></td>
+                          <td><button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
                         <tr>
                           <td>John</td>
                           <td>53275533</td>
+                          <td>XL size</td>
+                          <td>500$</td>
                           <td>14 May 2017</td>
                           <td><label class="badge badge-info">Fixed</label></td>
+                          <td><button type="button" class="btn btn-warning modal-activator">Edit</button></td>
+                          <td><button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
                         <tr>
                           <td>Peter</td>
                           <td>53275534</td>
+                          <td>XL size</td>
+                          <td>500$</td>
                           <td>16 May 2017</td>
                           <td><label class="badge badge-success">Completed</label></td>
+                          <td><button type="button" class="btn btn-warning modal-activator">Edit</button></td>
+                          <td><button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
                         <tr>
                           <td>Dave</td>
                           <td>53275535</td>
+                          <td>XL size</td>
+                          <td>500$</td>
                           <td>20 May 2017</td>
                           <td><label class="badge badge-warning">In progress</label></td>
+                          <td><button type="button" class="btn btn-warning modal-activator">Edit</button></td>
+                          <td><button type="button" class="btn btn-danger">Delete</button></td>
                         </tr>
                       </tbody>
                     </table>
@@ -1100,6 +1123,46 @@
     </div>
     <!-- page-body-wrapper ends -->
   </div>
+  <div class="modal-block">
+    <div class="grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Default form</h4>
+          <p class="card-description">
+            Basic form layout
+          </p>
+          <form class="forms-sample">
+            <div class="form-group">
+              <label for="exampleInputUsername1">Name</label>
+              <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Id</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Package</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputConfirmPassword1">Price</label>
+              <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputConfirmPassword1">Data</label>
+              <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputConfirmPassword1">Status</label>
+              <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <button class="btn btn-light modal-close-button">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
@@ -1115,6 +1178,7 @@
   <!-- endinject -->
   <!-- Custom js for this page-->
   <!-- End custom js for this page-->
+  <script src="../../js/modal.js"></script>
 </body>
 
 </html>
