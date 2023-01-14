@@ -1194,18 +1194,35 @@
                 <input type="email" name="email" class="form-control" placeholder="Email">
               </div>
             </div>
-
-
-            <div class="form-group">
-              <label for="date">Date</label>
-              <input type="date" name="date" class="form-control">
+            <div class="form-group d-flex justify-content-between">
+              <div class="w-100">
+                <label for="price">Price</label>
+                <input type="number" name="price" class="form-control" placeholder="Price">
+              </div>
+              <div class="ml-5 w-100">
+                <label class='d-block' for="package">Package</label>
+                <select class="w-100" name="package" id="package">
+                    <optgroup>
+                        <option value="">L</option>
+                        <option value="">M</option>
+                        <option value="">XL</option>
+                        <option value="">XLL</option>
+                    </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="form-group d-flex justify-content-between">
+              <div class="w-100">
+                <label for="date">Date</label>
+                <input type="date" name="date" class="form-control">
+              </div>
+              <div class="ml-5 w-100">
+                <label for="time">Appointment time</label>
+                <input type="numbers" class="form-control" name="time" placeholder="Appointment Time">
+              </div>
             </div>
             <div class="form-group">
-              <label for="exampleInputConfirmPassword1">Appointment time</label>
-              <input type="numbers" class="form-control" name="time" placeholder="Appointment Time">
-            </div>
-            <div class="form-group">
-              <label class='d-block'for="cars">Status</label>
+              <label class='d-block'for="statuss">Status</label>
                 <select name="status" id="status">
                     <optgroup>
                         <option value="">Pending (a request without pre-payement)</option>
